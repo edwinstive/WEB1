@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Joyería Isabella</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>💎 JOYERÍA ISABELLA 💎</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="cadenas.html">Cadenas</a>
+        <a href="relojes.html">Relojes</a>
+        <a href="anillos.html">Anillos</a>
+        <a href="servicio-al-cliente.html">Servicio</a>
+    </nav>
+</header>
+
+<main>
+    <form class="formulario-registro" action="registro.php" method="POST">
+        <h2>Formulario de Registro</h2>
+
+        <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10,15}" placeholder="Ej: 3216118954" required>
+        </div>
+
+        <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" value="Colombia" required>
+        </div>
+
+        <div class="form-group">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+        </div>
+
+        <button type="submit">Registrarse</button>
+        
+        <div style="text-align: center; margin-top: 1rem;">
+            <p>¿Ya tienes cuenta? <a href="inicio-de-sesion.html" style="color: #d4af37;">Inicia sesión aquí</a></p>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 Joyería Isabella - Todos los derechos reservados</p>
+    <p>📍 Kr 78i #73a-20 Sur | 📱 321-611-8954</p>
+</footer>
+
+</body>
+</html>
